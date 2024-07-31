@@ -1,7 +1,8 @@
 #!/bin/bash
-#my script to update spicetify without restarting it, sometimes it does restart but idk why it does that, if you can improve it, please let me know. I use it in my wallpaper changer script 
 
-file=~/.config/spicetify/Themes/def/color.ini
+#my script to update spicetify without restarting it, kinda janky ngl, sometimes it does restart but idk why it does that, if you can improve it, please let me know. I use it in my wallpaper changer script 
+
+file=~/.config/spicetify/Themes/defaultwal/color.ini
 
 if [ -e "$file" ]; then
  rm $file && cp ~/.cache/wal/color.ini $file && spicetify watch -s -n
